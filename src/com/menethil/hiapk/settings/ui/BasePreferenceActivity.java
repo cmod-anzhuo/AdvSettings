@@ -26,12 +26,13 @@ public abstract class BasePreferenceActivity extends PreferenceActivity {
 	protected void inistPreferenceActivity() {
 		try {
 			for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
-				PreferenceGroup parent = (PreferenceGroup) getPreferenceScreen().getPreference(i);
+				PreferenceGroup parent = (PreferenceGroup) getPreferenceScreen()
+						.getPreference(i);
 
 				List<Preference> removeList = new ArrayList<Preference>();
 
 				for (int j = 0; j < parent.getPreferenceCount(); j++) {
-					// 目标无法到达
+					// Intent 无法到达
 					if (!Utils.checkIntent(parent.getPreference(j).getIntent())) {
 						removeList.add(parent.getPreference(j));
 					}
@@ -41,12 +42,12 @@ public abstract class BasePreferenceActivity extends PreferenceActivity {
 					continue;
 				}
 
-				// 移除无用项
+				// 移出无用选项
 				for (Preference pre : removeList) {
 					parent.removePreference(pre);
 				}
 
-				// 无字节点
+				// 无子项，移出父项
 				if (parent.getPreferenceCount() == 0) {
 					getPreferenceScreen().removePreference(parent);
 					i--;
