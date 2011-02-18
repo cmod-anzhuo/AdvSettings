@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="高级重启"
+		android:key="reboot_mode_root">
+		<Preference android:key="reboot" android:title="重启"
+			android:summary="普通重启" />
+		<Preference android:key="reboot_recovery" android:title="重启到 Recovery"
+			android:summary="重启到 Recovery 模式" />
+		<Preference android:key="reboot_fastboot" android:title="重启到 Fastboot"
+			android:summary="重启到 FastBoot 模式" />
+	</PreferenceCategory>
+</PreferenceScreen>

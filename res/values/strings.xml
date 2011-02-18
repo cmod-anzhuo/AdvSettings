@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Hiapk</string>
+	<string name="app_name_settings">高级功能</string>
+	<string name="app_name_tools">工具</string>
+</resources>

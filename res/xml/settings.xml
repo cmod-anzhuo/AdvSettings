@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="隐私/安全"
+		android:key="sercit_root">
+		<Preference android:key="exes_warder" android:title="吸费克星"
+			android:summary="拦截后台发送短信，扫描恶意软件">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.hiapk.exeswarder" android:targetClass="com.hiapk.exeswarder.main.WarderTabActivity" />
+		</Preference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="界面/按键"
+		android:key="ui_root">
+		<Preference android:key="theme" android:title="主题"
+			android:summary="选择个性化的主题">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.tmobile.themechooser"
+				android:targetClass="com.tmobile.themechooser.ThemeChooser" />
+		</Preference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="文件/程序 管理"
+		android:key="manager_root">
+		<Preference android:key="appinstaller" android:title="程序安装管理"
+			android:summary="备份/批量安装程序，卸载固件自带软件">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.hiapk.installer" android:targetClass="com.hiapk.installer.AppTabActivity" />
+		</Preference>
+		<Preference android:key="marketaccess" android:title="切换电子市场区域"
+			android:summary="切换当前电子市场区域以下载更多的软件">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.hiapk.MarketAccess" android:targetClass="com.hiapk.MarketAccess.view.StartUpView" />
+		</Preference>
+		<Preference android:key="filemanager" android:title="管理文件"
+			android:summary="启动 OI Filemanager 管理文件">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="org.openintents.filemanager"
+				android:targetClass="org.openintents.filemanager.FileManagerActivity" />
+		</Preference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="高级功能"
+		android:key="master_root">
+		<Preference android:key="cm_parts" android:title="高级设置"
+			android:summary="由第三方提供的高级设置功能">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.cyanogenmod.cmparts"
+				android:targetClass="com.cyanogenmod.cmparts.activities.MainActivity" />
+		</Preference>
+		<Preference android:key="google_helper" android:title="连接助手"
+			android:summary="当 Google 服务无法正常使用时，请尝试 Google 连接助手">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.hiapk.fuckgwf" android:targetClass="com.hiapk.fuckgwf.HelpMeActivity" />
+		</Preference>
+		<Preference android:key="homekey_settings" android:title="快捷任务设置"
+			android:summary="设置快捷任务功能">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.hiapk.homekey" android:targetClass="com.hiapk.homekey.Preference" />
+		</Preference>
+		<Preference android:key="super_user" android:title="超级用户权限"
+			android:summary="管理应用程序的超级用户权限">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.noshufou.android.su" android:targetClass="com.noshufou.android.su.Su" />
+		</Preference>
+		<Preference android:key="term" android:title="终端工具"
+			android:summary="启动终端程序执行命令">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="jackpal.androidterm2" android:targetClass="jackpal.androidterm2.Term" />
+		</Preference>
+	</PreferenceCategory>
+</PreferenceScreen>

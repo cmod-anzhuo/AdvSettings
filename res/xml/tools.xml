@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:key="tools_root">
+		<Preference android:key="recorder" android:title="录音机">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.android.soundrecorder"
+				android:targetClass="com.android.soundrecorder.SoundRecorder" />
+		</Preference>
+		<Preference android:key="calculator" android:title="计算器">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.android.calculator2" android:targetClass="com.android.calculator2.Calculator" />
+		</Preference>
+		<Preference android:key="fm_radio" android:title="FM 收音机">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.android.fm" android:targetClass="com.android.fm.radio.FMRadio" />
+		</Preference>
+		<Preference android:key="clock" android:title="时钟">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.android.deskclock" android:targetClass="com.android.deskclock.DeskClock" />
+		</Preference>
+		<Preference android:key="dps_manager" android:title="DSP 管理器">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.bel.android.dspmanager"
+				android:targetClass="com.bel.android.dspmanager.activity.DSPManager" />
+		</Preference>
+		<Preference android:key="stk" android:title="SIM 卡管理器">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.android.stk" android:targetClass="com.android.stk.StkLauncherActivity" />
+		</Preference>
+	</PreferenceCategory>
+</PreferenceScreen>
