@@ -18,6 +18,11 @@ public class BaseContext {
 		}
 	}
 
+	/**
+	 * 单例模式
+	 * 
+	 * @return
+	 */
 	public static BaseContext getInstance() {
 		return InitInstance.get();
 	}

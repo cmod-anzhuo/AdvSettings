@@ -10,7 +10,7 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".ui.Tools" android:label="@string/app_name_tools"
+		<activity android:name=".ui.SurfUI" android:label="@string/app_name_tools"
 			android:icon="@drawable/ic_tools">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
