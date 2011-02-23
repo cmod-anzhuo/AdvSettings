@@ -34,19 +34,25 @@ public class SubMenuModule {
 		Context context = BaseContext.getInstance().getContext();
 
 		List<SubMenuItem> subMenuTools = new ArrayList<SubMenuItem>();
+		
 		BaseApp recorder = new BaseApp("com.android.soundrecorder", "com.android.soundrecorder.SoundRecorder");
 		addToList(new SubMenuItem(recorder.getAppName(), recorder.getIcon(), null, recorder.getIntent()), subMenuTools);
+		
 		BaseApp calculator = new BaseApp("com.android.calculator2", "com.android.calculator2.Calculator");
 		addToList(new SubMenuItem(calculator.getAppName(), calculator.getIcon(), null, calculator.getIntent()),
 				subMenuTools);
+		
 		BaseApp fm_radio = new BaseApp("com.android.fm", "com.android.fm.radio.FMRadio");
 		addToList(new SubMenuItem(fm_radio.getAppName(), fm_radio.getIcon(), null, fm_radio.getIntent()), subMenuTools);
+		
 		BaseApp clock = new BaseApp("com.android.deskclock", "com.android.deskclock.DeskClock");
 		addToList(new SubMenuItem(clock.getAppName(), clock.getIcon(), null, clock.getIntent()), subMenuTools);
+		
 		BaseApp dps_manager = new BaseApp("com.bel.android.dspmanager",
 				"com.bel.android.dspmanager.activity.DSPManager");
 		addToList(new SubMenuItem(dps_manager.getAppName(), dps_manager.getIcon(), null, dps_manager.getIntent()),
 				subMenuTools);
+		
 		BaseApp stk = new BaseApp("com.android.stk", "com.android.stk.StkLauncherActivity");
 		addToList(new SubMenuItem(stk.getAppName(), stk.getIcon(), null, stk.getIntent()), subMenuTools);
 

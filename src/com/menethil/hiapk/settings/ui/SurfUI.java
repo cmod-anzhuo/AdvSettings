@@ -51,6 +51,7 @@ public class SurfUI extends Activity {
 		) {
 			// 在本例中arg2=arg3
 			subMenuItem.getSubMenuList().get(arg2).doAction();
+			SurfUI.this.finish();
 		}
 
 	}

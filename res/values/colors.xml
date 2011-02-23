@@ -42,4 +42,5 @@
     <color name="viewfinder_frame">#ffffffff</color>
     <color name="viewfinder_laser">#ffff0000</color>
     <color name="viewfinder_mask">#60000000</color>
+    <color name="transparent_background">#DD000000</color>
 </resources>
